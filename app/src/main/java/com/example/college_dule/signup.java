@@ -56,7 +56,7 @@ public class signup extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError error) {
 
                     }
-                })
+                });
 
 
             } catch (Exception e) {
