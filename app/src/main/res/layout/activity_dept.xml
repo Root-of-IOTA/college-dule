@@ -4,17 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".leaderpage"
-    tools:deviceIds="wear">
-
+    tools:context=".dept">
 
     <ImageView
-        android:id="@+id/page2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/page2" />
+        android:src="@drawable/blue" />
 
     <TextView
         android:layout_width="match_parent"
@@ -34,7 +30,7 @@
         android:id="@+id/page2b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/page2c"
+        android:src="@drawable/dept"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -44,12 +40,12 @@
         android:id="@+id/college"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="500dp"
+        android:layout_marginBottom="384dp"
         android:fontFamily="sans-serif"
         android:text="click"
-        app:backgroundTint="#f57636"
+        app:backgroundTint="#F984D9"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -57,7 +53,7 @@
         android:id="@+id/club"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="500dp"
+        android:layout_marginBottom="384dp"
         android:fontFamily="sans-serif"
         android:text="click"
         app:backgroundTint="@color/black"
@@ -70,12 +66,12 @@
         android:id="@+id/hostel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="176dp"
         android:fontFamily="sans-serif"
         android:text="click"
         app:backgroundTint="#808080"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -83,12 +79,12 @@
         android:id="@+id/friends"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="176dp"
         android:fontFamily="sans-serif"
         android:text="click"
         app:backgroundTint="#808080"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
