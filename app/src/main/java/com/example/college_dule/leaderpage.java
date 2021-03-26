@@ -15,6 +15,8 @@ public class leaderpage extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderpage);
 
+        String type = getIntent().getStringExtra("type");
+
         btnCollege = (Button) findViewById(R.id.college);
         btnClub = (Button) findViewById(R.id.club);
         btnFriends = (Button) findViewById(R.id.friends);
@@ -25,6 +27,7 @@ public class leaderpage extends Activity {
         });
         btnClub.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), club.class);
+            intent.putExtra("type", type);
             startActivity(intent);
         });
         btnFriends.setOnClickListener(view -> {

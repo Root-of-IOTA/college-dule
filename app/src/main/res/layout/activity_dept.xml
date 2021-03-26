@@ -18,7 +18,7 @@
         android:background="#03A9F4"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="----"
+        android:text="Department"
         android:textColor="#F8F6E9"
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/college"
+        android:id="@+id/cse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="384dp"
@@ -50,7 +50,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/club"
+        android:id="@+id/ece"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="384dp"
@@ -63,7 +63,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/hostel"
+        android:id="@+id/eee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="176dp"
@@ -76,7 +76,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/friends"
+        android:id="@+id/mech"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="176dp"

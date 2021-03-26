@@ -3,10 +3,12 @@ package com.example.college_dule;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.service.autofill.Dataset;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,6 +23,7 @@ import org.w3c.dom.Text;
 public class club extends AppCompatActivity {
     DatabaseReference dbRef;
     LinearLayout layoutClubEvents;
+    Button btnAddEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,18 @@ public class club extends AppCompatActivity {
         setContentView(R.layout.activity_club);
         LayoutInflater inflater = getLayoutInflater();
         layoutClubEvents = (LinearLayout) findViewById(R.id.club_plans);
+        btnAddEvent = (Button) findViewById(R.id.club_event_add);
+
+        String type = getIntent().getStringExtra("type").toString();
+        if(type.compareTo("admin") != 0) {
+            btnAddEvent.setVisibility(View.GONE);
+        }
+
+        btnAddEvent.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), plan_detail.class);
+            intent.putExtra("category", "club");
+            startActivity(intent);
+        });
 
         dbRef = FirebaseDatabase.getInstance().getReference("club");
         dbRef.addValueEventListener(new ValueEventListener() {

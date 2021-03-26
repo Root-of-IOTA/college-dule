@@ -17,11 +17,13 @@ public class college extends Activity {
         btnTimeTable = (Button) findViewById(R.id.timetable);
 
         btnExam.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), exam.class);
+            Intent intent = new Intent(getApplicationContext(), dept.class);
+            intent.putExtra("to", "exam");
             startActivity(intent);
         });
         btnTimeTable.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), classtable.class);
+            Intent intent = new Intent(getApplicationContext(), dept.class);
+            intent.putExtra("to", "timetable");
             startActivity(intent);
         });
     }

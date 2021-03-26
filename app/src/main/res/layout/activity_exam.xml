@@ -13,5 +13,15 @@
         android:scaleType="centerCrop"
         android:src="@drawable/whitegrey" />
 
+    <TextView
+        android:id="@+id/dept_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="36dp"
+        android:text="dept"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
