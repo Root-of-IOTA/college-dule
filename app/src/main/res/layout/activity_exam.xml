@@ -13,27 +13,5 @@
         android:scaleType="centerCrop"
         android:src="@drawable/whitegrey" />
 
-    <ImageView
-        android:id="@+id/classtable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:scaleType="fitEnd"
-        android:src="@drawable/exam"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:gravity="center"
-        android:layout_marginTop="100dp"
-        android:text="----"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
