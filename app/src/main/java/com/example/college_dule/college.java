@@ -1,21 +1,28 @@
 package com.example.college_dule;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.wearable.activity.WearableActivity;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class college extends WearableActivity {
-
-    private TextView mTextView;
+public class college extends Activity {
+    Button btnExam, btnTimeTable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_college);
 
-        mTextView = (TextView) findViewById(R.id.text);
+        btnExam = (Button) findViewById(R.id.exam);
+        btnTimeTable = (Button) findViewById(R.id.timetable);
 
-        // Enables Always-on
-        setAmbientEnabled();
+        btnExam.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), exam.class);
+            startActivity(intent);
+        });
+        btnTimeTable.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), classtable.class);
+            startActivity(intent);
+        });
     }
 }
