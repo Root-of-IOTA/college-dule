@@ -26,6 +26,15 @@
             android:value="true" />
 
         <activity
+            android:name=".college"
+            android:label="@string/title_activity_college">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".leaderpage"
             android:label="@string/title_activity_leaderpage">
             <intent-filter>
