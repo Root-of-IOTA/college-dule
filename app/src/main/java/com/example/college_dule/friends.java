@@ -43,12 +43,16 @@ public class friends extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot data: snapshot.getChildren()) {
-                    View v = inflater.inflate(R.layout.time_card, null);
-                    TextView vtime = (TextView) v.findViewById(R.id.time);
-                    TextView vtext = (TextView) v.findViewById(R.id.text);
-                    vtime.setText(data.child("time").getValue().toString());
-                    vtext.setText(data.child("text").getValue().toString());
-                    layoutFriends.addView(v);
+                    try {
+                        View v = inflater.inflate(R.layout.time_card, null);
+                        TextView vtime = (TextView) v.findViewById(R.id.time);
+                        TextView vtext = (TextView) v.findViewById(R.id.text);
+                        vtime.setText(data.child("time").getValue().toString());
+                        vtext.setText(data.child("text").getValue().toString());
+                        layoutFriends.addView(v);
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
                 }
             }
 
