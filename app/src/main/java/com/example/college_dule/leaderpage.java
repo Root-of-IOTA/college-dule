@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class leaderpage extends Activity {
-    Button btnCollege, btnFriends, btnClub, btnHostel;
+    Button btnCollege, btnFriends, btnClub;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,6 @@ public class leaderpage extends Activity {
         btnCollege = (Button) findViewById(R.id.college);
         btnClub = (Button) findViewById(R.id.club);
         btnFriends = (Button) findViewById(R.id.friends);
-        btnHostel = (Button) findViewById(R.id.hostel);
 
         btnCollege.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), college.class);
@@ -30,10 +29,6 @@ public class leaderpage extends Activity {
         });
         btnFriends.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), friends.class);
-            startActivity(intent);
-        });
-        btnHostel.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), hostel.class);
             startActivity(intent);
         });
     }

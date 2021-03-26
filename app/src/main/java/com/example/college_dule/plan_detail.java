@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -60,8 +61,13 @@ public class plan_detail extends AppCompatActivity implements DatePickerDialog.O
         btnEnter.setOnClickListener(view -> {
             String text = detail.getText().toString();
 //            System.out.println(category+" "+childCount+" "+text+" "+time);
-            dbRef.child(Integer.toString(childCount+1)).child("text").setValue(text);
-            dbRef.child(Integer.toString(childCount+1)).child("time").setValue(time);
+            if(text != null) {
+                dbRef.child(Integer.toString(childCount+1)).child("text").setValue(text);
+                dbRef.child(Integer.toString(childCount+1)).child("time").setValue(time);
+            } else {
+                Toast.makeText(getApplicationContext(), "enter date",Toast.LENGTH_SHORT);
+            }
+
         });
     }
 
