@@ -32,6 +32,7 @@ public class signup extends AppCompatActivity {
         txtusername = (TextView) findViewById(R.id.signup_username);
         txtpassword = (TextView) findViewById(R.id.signup_password);
         txtcpassword = (TextView) findViewById(R.id.cpassword);
+        chkBox = (CheckBox) findViewById(R.id.checkBox_admin);
 
         btnSignUp.setOnClickListener(view -> {
             try{
@@ -57,6 +58,8 @@ public class signup extends AppCompatActivity {
 
                     }
                 });
+                dbRef.child(Integer.toString(count+1)).child("username").setValue(username);
+                dbRef.child(Integer.toString(count+1)).child("password").setValue(password);
 
 
             } catch (Exception e) {
