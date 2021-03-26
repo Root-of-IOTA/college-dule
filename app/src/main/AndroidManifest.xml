@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Collegedule">
-        <activity android:name=".hostel"></activity>
+        <activity android:name=".friends"></activity>
+        <activity android:name=".hostel" />
         <activity android:name=".club" />
         <activity android:name=".exam" />
         <activity android:name=".dept" />
