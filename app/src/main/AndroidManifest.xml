@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Collegedule">
-        <activity android:name=".friends"></activity>
+        <activity android:name=".plan_detail">
+        </activity>
+        <activity android:name=".friends" />
         <activity android:name=".hostel" />
         <activity android:name=".club" />
         <activity android:name=".exam" />
@@ -18,8 +20,7 @@
         <activity android:name=".signup" />
         <activity
             android:name=".college"
-            android:label="@string/title_activity_college">
-        </activity>
+            android:label="@string/title_activity_college"></activity>
         <activity
             android:name=".leaderpage"
             android:label="@string/title_activity_leaderpage" />
